@@ -32,16 +32,23 @@ namespace Exercise_1
            
 
             Sales newSale = new Sales("Cola",150,employee1,customer1);
+            Sales newSale2 = new Sales("Pepsi",250,employee1,customer1);
 
-            Console.WriteLine("******Sales list in the employee (sales)******\n");
+            Console.WriteLine("\n******Sales list in the employee (sales)******\n");
             foreach (var sales in employee1.SalesList )
             {
                 Console.WriteLine(sales);
             }
 
-            Console.WriteLine("\n**********Sales list in the customer (Purschaes)***********");
+            Console.WriteLine("\n **********Sales list in the customer (Purschaes)***********");
             customer1.PurschesList.ForEach(purchase => Console.WriteLine(purchase));
 
+            // Total sales & and number of sales & avarege
+            Console.WriteLine("\n*********** Employee stats *************");
+            employee1.statistics();
+
+            Console.WriteLine("\n********* Product and buyer details**************");
+            employee1.PrintSalesList();
         }
     }
 }

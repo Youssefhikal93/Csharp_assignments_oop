@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Exercise_1
 {
-    class Customer : Person
+    public class Customer : Person
     {
 
         public List<Sales> PurschesList = new List<Sales>();
