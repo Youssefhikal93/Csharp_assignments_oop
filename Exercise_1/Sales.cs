@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Exercise_1
 {
-    class Sales
+    public class Sales
     {
-        string ProductName { get; set; }
-        double price { get; set; }
-        Employee Employee { get; set; }
-        Customer Customer { get; set; }
+        public string ProductName { get; set; }
+        public double price { get; set; }
+        public Employee Employee { get; set; }
+        public Customer Customer { get; set; }
         DateTime TransactionDate { get; set; }
 
 

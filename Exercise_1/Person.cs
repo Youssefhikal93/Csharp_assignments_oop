@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Exercise_1
 {
-    class Person
+    public class Person
     {
         protected int _age { get; set; }
-        protected string _firstName { get; set; }
+        public string _firstName { get; set; }
         protected string _lastName { get; set; }
         private static int _instancesCount = 0;
 
